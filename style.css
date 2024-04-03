@@ -1,0 +1,182 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: hsl(210, 46%, 95%);
+
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed';
+
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    padding: 10rem;
+}
+
+/* global */
+
+.t1,
+.t2,
+.t3,
+.t4,
+.t5 {
+    border-radius: 8px;
+
+    padding: 2rem;
+}
+
+.pfp {
+    border-radius: 50%;
+
+    width: 2.5rem;
+
+    margin-right: 1rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.grad {
+    color: hsl(0, 0%, 81%);
+}
+
+.review {
+    font-size: 1.45rem;
+    font-weight: 570;
+
+    margin-top: 0;
+}
+
+.story {
+    font-size: 1rem;
+}
+
+/* t1 */
+.t1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: right 27% top;
+
+    grid-column: span 2; /* span over 2 columns */
+}
+
+.t1 img {
+    border: 2.5px solid hsl(263, 31%, 60%);
+}
+
+.t1 .name {
+    color: hsl(0, 0%, 100%);
+}
+
+.t1 .review {
+    color: hsla(0, 0%, 100%, 0.958);
+}
+
+.t1 .story {
+    color: hsl(0, 0%, 81%);
+}
+
+/* t2 */
+.t2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.t2 .name {
+    color: hsl(0, 0%, 100%);
+}
+
+.t2 .review {
+    color: hsla(0, 0%, 100%, 0.958);
+}
+
+.t2 .story {
+    color: hsl(0, 0%, 81%);
+}
+
+/* t3 */
+.t3 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.t3 .name {
+    color: hsl(217, 19%, 35%);
+}
+
+.t3 .review {
+    color: hsl(217, 19%, 35%);
+}
+
+.t3 .story {
+    color: hsl(217, 19%, 35%);
+}
+
+/* t4 */
+.t4 {
+    background-color: hsl(219, 29%, 14%);
+
+    grid-column: span 2; /* span over 2 columns */
+}
+
+.t4 img {
+    border: 2.5px solid hsl(263, 31%, 60%);
+}
+
+.t4 .name {
+    color: hsl(0, 0%, 100%);
+}
+
+.t4 .review {
+    color: hsla(0, 0%, 100%, 0.958);
+}
+
+.t4 .story {
+    color: hsl(0, 0%, 81%);
+}
+
+/* t5 */
+.t5 {
+    background-color: hsl(0, 0%, 100%);
+
+    grid-column: 4; /* start at column 4 in the grid */
+    grid-row: 1 / span 2; /* span 2 rows from its position */
+}
+
+.t5 .name {
+    color: hsl(217, 19%, 35%);
+}
+
+.t5 .review {
+    color: hsl(217, 19%, 35%);
+}
+
+.t5 .story {
+    color: hsl(217, 19%, 35%);
+}
+
+/* responsive design */
+
+@media only screen and (width <= 1000px) {
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 1.5rem;
+
+        width: 100%; /* for the width size of the items */
+    }
+}
